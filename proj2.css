@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #282c34;
+    color: #ffffff;
+}
+
+/* Stopwatch Container */
+.stopwatch {
+    text-align: center;
+    background: #444;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 350px;
+}
+
+/* Display Styles */
+#display {
+    font-size: 2.5em;
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: #00d8ff;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+/* Control Buttons */
+.controls button {
+    font-size: 1.2em;
+    padding: 12px 25px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+#startStop {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+#startStop:hover {
+    background-color: #218838;
+}
+
+#lap {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+#lap:hover {
+    background-color: #0056b3;
+}
+
+#reset {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+#reset:hover {
+    background-color: #c82333;
+}
+
+.controls button:active {
+    transform: scale(0.95);
+}
+
+/* Lap Container */
+#laps {
+    margin-top: 20px;
+    text-align: left;
+    max-height: 150px;
+    overflow-y: auto;
+    padding-right: 10px;
+    border-top: 1px solid #555;
+}
+
+#laps div {
+    padding: 8px 0;
+    border-bottom: 1px solid #555;
+}
+
+#laps div:last-child {
+    border-bottom: none;
+}
+
+/* Scrollbar Customization */
+#laps::-webkit-scrollbar {
+    width: 8px;
+}
+
+#laps::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+#laps::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
